@@ -1,0 +1,8 @@
+<form  class="form" id="form" [(ngModel)]="form">
+
+    <h4 class="score" id="score">Score: {{sayac}}</h4>
+    <h1 id="question">{{q1}}x{{q2}}</h1>
+    <input type="number" class="input" id="input" placeholder="Enter Your Answer?" name="input" autofocus autocomplete="off" [(ngModel)]="num1">
+    <button type="submit" class="btn" formArrayName="submit" (click)="answer()">Submit</button>
+</form>
+
